@@ -8,6 +8,7 @@ With this terraform repo, you can create either a regional or zonal cluster. Gen
 
 This repo follows best-practices and runs nodes using a custom service account to follow the principle of least privilege. However you will need to ensure that the Identiry and Access Management (IAM) API has been enabled for the given project. This can be enabled in the [Google API Console](https://console.developers.google.com/apis/api/iam.googleapis.com/overview).
 
+
 ## Modules used:
  | Name | Description | URL |
  | ---- | ----------- | --- |
@@ -33,7 +34,7 @@ This repo follows best-practices and runs nodes using a custom service account t
 
 | Name | Description | Type | Default | Required | Example |
 | ---- | ----------- | ---- | ------- | -------- | ------- |
-| project| The project ID where all resources will be launched.| string| No| Yes| shipwire-eng-core-dev|
+| project| The project ID where all resources will be launched.| string| No| Yes| |
 | location| The location (region or zone) of the GKE cluster.| string| No| Yes| us-central1|
 |region| The region for the network. If the cluster is regional, this ust be the same region. Otherwise, it should be the region of the zone.| string| No | Yes| us-central1-f|
 | cluster_name| Name of the Kubernetes cluster.| string| example-cluster| No| mycluster|
