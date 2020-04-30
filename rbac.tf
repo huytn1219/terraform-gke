@@ -13,7 +13,7 @@ resource "kubernetes_cluster_role_binding" "sw-devops" {
     }
     subject {
         kind      = "Group"
-        name      = "k8s-devops@shipwire.com"
+        name      = ""
         api_group = "rbac.authorization.k8s.io"
     }
 }
@@ -44,7 +44,7 @@ resource "kubernetes_cluster_role_binding" "sw-qa" {
     }
     subject {
         kind      = "Group"
-        name      = "k8s-qa@shipwire.com"
+        name      = ""
         api_group = "rbac.authorization.k8s.io"
     }
 }
@@ -79,7 +79,7 @@ resource "kubernetes_role_binding" "sw-dev-binding-example" {
     }
     subject {
         kind      = "Group"
-        name      = "k8s-dev-example@shipwire.com"
+        name      = ""
         api_group = "rbac.authorization.k8s.io"
     }
 }
