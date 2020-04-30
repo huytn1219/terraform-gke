@@ -11,10 +11,10 @@ This repo follows best-practices and runs nodes using a custom service account t
 ## Modules used:
  | Name | Description | URL |
  | ---- | ----------- | --- |
- | sw-gke-service-account| Create GCP service account for use with a GKE cluster. | https://bitbucket.org/shipwire/terraform-modules/src/develop/sw-gke-service-account/ |
- | sw-gke-cluster | Create a public GKE cluster with 1 node. | https://bitbucket.org/shipwire/terraform-modules/src/develop/sw-gke-cluster/|
- | sw-gcp-network| Create a Virtual Private Cloud (VPC) on Google Cloud Platform (GCP) to host your cluster in. | https://bitbucket.org/shipwire/terraform-modules/src/develop/sw-gcp-network/ |
- |sw-gcp-network-firewall| Used to configure a standard set of firewall rules for your network. | https://bitbucket.org/shipwire/terraform-modules/src/develop/sw-gcp-network-firewall/|
+ | sw-gke-service-account| Create GCP service account for use with a GKE cluster. |  |
+ | sw-gke-cluster | Create a public GKE cluster with 1 node. | |
+ | sw-gcp-network| Create a Virtual Private Cloud (VPC) on Google Cloud Platform (GCP) to host your cluster in. |  |
+ |sw-gcp-network-firewall| Used to configure a standard set of firewall rules for your network. | |
 
 
 
