@@ -14,7 +14,7 @@ terraform {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 module "gke_cluster" {
-    source = "git::ssh://git@bitbucket.org/shipwire/terraform-modules.git//sw-gke-cluster?ref=master"
+    source = ""
     name = var.cluster_name
 
     project = var.project
@@ -91,7 +91,7 @@ resource "google_container_node_pool" "node_pool" {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 module "gke_service_account" {
-    source = "git::ssh://git@bitbucket.org/shipwire/terraform-modules.git//sw-gke-service-account?ref=master"
+    source = ""
     
     name        = var.cluster_service_account_name
     project     = var.project
@@ -113,7 +113,7 @@ resource "random_string" "suffix" {
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 module "vpc_network" {
-    source = "git::ssh://git@bitbucket.org/shipwire/terraform-modules.git//sw-gcp-network?ref=master"
+    source = ""
 
     name_prefix = "${var.cluster_name}-network-${random_string.suffix.result}"
     project     = var.project
