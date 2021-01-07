@@ -6,7 +6,7 @@
 variable "project" {
     description = "The project ID where all resources will be launched."
     type        = string
-    default     = "shipwire-eng-core-dev"
+    default     = "dev"
 }
 
 variable "location" {
